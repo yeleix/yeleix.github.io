@@ -1,7 +1,66 @@
 body {
-  background: #000;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
 }
 
-h1 {
-  color: #FF2734;
+header,
+footer {
+  width: 100%;
+  padding: 2% 0;
+  font-size: 1.2rem;
+  color: #fff;
+  flex: 0;
+}
+
+header {
+  background: #006e54;
+}
+
+footer {
+  background: #727171;
+}
+
+.holyGrail {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding-top: 80px;
+}
+
+.side-nav,
+.side-bar {
+  width: 200px;
+  background: #fddea5;
+}
+
+.side-nav {
+  order: -1;
+}
+
+.menu-item {
+  text-align: left;
+  width: 200px;
+  padding-left: 40px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  border: #fff 8px solid;
+  width: 150px;
+  padding-top: 50px;
+}
+
+.maintext {
+  text-align: justify;
+  width: 900px;
+  overflow: hidden;
+  padding: 0 20px 0 80px;
 }
