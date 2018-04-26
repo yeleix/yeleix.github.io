@@ -9,6 +9,22 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.intro {
+  font-family: 'avenir next', avenir, sans-serif;
+  font-size: 120px;
+  width: 800px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.about-me,
+.intro-subheading {
+  font-family: 'avenir next', avenir, sans-serif;
+  font-size: 30px;
+  width: 800px;
+  text-align: center;
+}
+
 header,
 footer {
   width: 100%;
@@ -18,8 +34,8 @@ footer {
   flex: 0;
 }
 
-header {
-  background: #006e54;
+.header {
+  font-size: 45px;
 }
 
 footer {
@@ -31,10 +47,10 @@ footer {
 .sidebar {
   background: white;
   position: fixed;
-  width: 130px;
+  width: 140px;
   position: fixed;
   z-index: 2;
-  top: 50px;
+  top: 70px;
   left: 30px;
   background-color: #eee;
   overflow-x: hidden;
@@ -44,15 +60,6 @@ footer {
   padding-left: 15px;
 }
 
-.side-nav {
-  order: -1;
-}
-
-.menu-item {
-  text-align: left;
-  width: 200px;
-  padding-left: 40px;
-}
 
 .img-circle {
   border-radius: 50%;
@@ -63,11 +70,11 @@ footer {
 
 .main {
   text-align: justify;
-  width: 900px;
+  width: 800px;
   overflow: hidden;
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 18px; /* Increased text to enable scrolling */
-  padding: 0 60px;
+  padding: 0 80px;
   padding-top: 100px;
 }
 
@@ -116,7 +123,7 @@ hr {
 
 
 .section-home {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .section-about {
@@ -128,7 +135,7 @@ hr {
 }
 
 .section-projects {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .section-now {
