@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header,
@@ -25,20 +26,22 @@ footer {
   background: #727171;
 }
 
-.holyGrail {
-  display: flex;
-  flex: 1;
-}
 
-.content {
-  flex: 1;
-  padding-top: 80px;
-}
-
-.side-nav,
-.side-bar {
-  width: 200px;
-  background: #fddea5;
+.sidenav,
+.sidebar {
+  background: white;
+  position: fixed;
+  width: 130px;
+  position: fixed;
+  z-index: 2;
+  top: 50px;
+  left: 30px;
+  background-color: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.7;
+  padding-left: 15px;
 }
 
 .side-nav {
@@ -58,9 +61,26 @@ footer {
   padding-top: 50px;
 }
 
-.maintext {
+.main {
   text-align: justify;
   width: 900px;
   overflow: hidden;
-  padding: 0 20px 0 80px;
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 13px;}
+    .sidenav a {font-size: 13px;}
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
 }
