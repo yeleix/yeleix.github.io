@@ -1,5 +1,7 @@
 body {
   display: -webkit-flex;
+  /* background-color: black; */
+  /* color: white; */
   display: flex;
   margin: 0;
   padding: 0;
